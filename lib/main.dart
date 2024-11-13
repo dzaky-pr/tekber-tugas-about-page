@@ -146,7 +146,7 @@ class MyProfilePage extends StatelessWidget {
                       children: [
                         const CircleAvatar(
                           radius: 48,
-                          backgroundImage: NetworkImage('images/image.png'),
+                          backgroundImage: AssetImage('images/image.png'),
                         ),
                         const SizedBox(width: 20),
                         Expanded(
