@@ -53,7 +53,7 @@ class MyProfilePage extends StatelessWidget {
         Icon(
           icon,
           color: iconColor,
-          size: iconSize, // Gunakan iconSize di sini
+          size: iconSize,
         ),
         const SizedBox(height: 8),
         if (active)
@@ -82,9 +82,8 @@ class MyProfilePage extends StatelessWidget {
           size: iconSize,
           semanticLabel: 'Icon Details',
         ),
-        const SizedBox(width: 4), // Jarak antara ikon dan teks
+        const SizedBox(width: 4),
         Flexible(
-          // Tambahkan Flexible di sini
           child: Text(
             text,
             style: TextStyle(
@@ -109,8 +108,7 @@ class MyProfilePage extends StatelessWidget {
             padding: const EdgeInsets.all(24.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment:
-                  CrossAxisAlignment.center, // Align items vertically center
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 const Text(
                   'dzaky.rifai',
@@ -163,8 +161,7 @@ class MyProfilePage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const SizedBox(
-                        height: 16), // Jarak antara foto dan detail bawah
+                    const SizedBox(height: 16),
                     const Text(
                       'Dzaky Purnomo Rifa\'i',
                       style: TextStyle(
@@ -183,7 +180,6 @@ class MyProfilePage extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 8),
-
                     const SizedBox(height: 4),
                     Column(
                       children: [
@@ -201,9 +197,7 @@ class MyProfilePage extends StatelessWidget {
                         ),
                       ],
                     ),
-
                     const SizedBox(height: 36),
-
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
@@ -215,12 +209,10 @@ class MyProfilePage extends StatelessWidget {
                             iconColor: Colors.grey.shade600),
                       ],
                     ),
-
                     const SizedBox(height: 12),
                     GridView.builder(
                       shrinkWrap: true,
-                      physics:
-                          const NeverScrollableScrollPhysics(), // Non-scrollable grid
+                      physics: const NeverScrollableScrollPhysics(),
                       gridDelegate:
                           const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 3,
